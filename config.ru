@@ -1,0 +1,3 @@
+require './logbot'
+
+run Logbot
