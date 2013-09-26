@@ -1,3 +1,3 @@
 require './logbot'
 
-run Logbot
+run Sinatra::Application

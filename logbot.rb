@@ -1,14 +1,17 @@
 require './initialize'
-require './logger'
 require './models/init'
+require 'sinatra'
 
-bot = Cinch::Bot.new do
-  configure do |c|
-    c.nick = "LogBot"
-    c.server = "irc.freenode.org"
-    c.channels = ["#cinch-bots"]
-    c.plugins.plugins = [Logger] 
-  end
+get '/' do
+  erb :messages, locals: { messages: Message.all }
 end
 
-bot.start
+post '/api/messages' do
+  puts params
+  message = Message.new(body: params[:body], nick: params[:nick])
+  if message.save
+    "Message saved!"
+  else
+    [400, ["There was an error saving the message."]]
+  end
+end

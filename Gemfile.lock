@@ -3,7 +3,6 @@ GEM
   specs:
     addressable (2.3.5)
     bcrypt-ruby (3.1.2)
-    cinch (2.0.9)
     data_mapper (1.2.0)
       dm-aggregates (~> 1.2.0)
       dm-constraints (~> 1.2.0)
@@ -71,7 +70,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cinch
   data_mapper
   dm-postgres-adapter
   sinatra
