@@ -1,5 +1,6 @@
 .messages {
   border-collapse: collapse;
+  font-family: proxima-nova;
 }
 
 .message {
@@ -20,6 +21,7 @@
 }
 
 .message-body {
+  font-weight: 400;
   padding: 10px;
   line-height: 1.5em;
   border: 1px solid #ddd;
