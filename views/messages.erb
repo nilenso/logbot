@@ -4,16 +4,18 @@
   <link rel="stylesheet" href="/stylesheets/foundation.min.css">
   <link rel="stylesheet" href="/stylesheets/logbot.css">
 </head>
-<div>
+<table class="messages">
+  <tbody>
   <% messages.each do |message| %>
-    <div class="row message">
-      <div class="columns small-3 large-3 message-nick">
+    <tr class="message">
+      <td class="message-nick">
         <%= message.nick %>
-      </div>
-      <div class="columns small-9 large-9 message-body">
+      </td>
+      <td class="message-body">
         <%= message.body %>
-      </div>
-    </div>
+      </td>
+    </tr>
   <% end %>
-</div>
+  </tbody>
+</table>
 </html>

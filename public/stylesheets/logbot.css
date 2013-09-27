@@ -1,16 +1,27 @@
+.messages {
+  border-collapse: collapse;
+}
+
 .message {
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-  background-color: red;
+}
+
+.message:nth-child(odd) {
+  background-color: #F8F8F8;
+}
+
+.message:nth-child(even) {
+  background-color: #F6F6F6;
 }
 
 .message-nick {
-  padding: 20px;
   text-align: right;
+  border: 1px solid #ddd;
+  font-weight: 700;
 }
 
 .message-body {
-  padding: 20px;
-  background-color: yellow;
+  padding: 10px;
+  line-height: 1.5em;
+  border: 1px solid #ddd;
+  background-color: white;
 }
