@@ -1,0 +1,16 @@
+.message {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  background-color: red;
+}
+
+.message-nick {
+  padding: 20px;
+  text-align: right;
+}
+
+.message-body {
+  padding: 20px;
+  background-color: yellow;
+}
