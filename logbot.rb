@@ -3,7 +3,7 @@ require './models/init'
 require 'sinatra'
 
 get '/' do
-  erb :messages, locals: { messages: Message.all }
+  erb :messages, locals: { messages: Message.all(order: [:id.desc]) }
 end
 
 post '/api/messages' do
